@@ -15,7 +15,8 @@ class String
   end
 
   def count_sentences
-    words = self.split(/[^\w,]/)
+    words = self.split(/[^\w, ]/)
+    words.delete_if.empty?
     words.size
     binding.pry
   end
