@@ -18,6 +18,5 @@ class String
     sentences = self.split(/[^\w, ]/)
     sentences.delete_if {|sentence| sentence.empty?}
     sentences.size
-    binding.pry
   end
 end
